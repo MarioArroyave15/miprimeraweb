@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Arroyave - Web Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous">        
+    </script>
+    <script src="script.js" defer></script>
+</head>
+
+<body> 
+    <header>
+        <h1 class="fuente-acento">Mi primera web</h1>
+        <nav class="navbar">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <Ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Trabajos</a></li>
+                <li><a href="index.html">Servicios</a></li>
+                <li><a href="index.html">Acerca de mi</a></li>
+                <li><a href="index.html">Contacto</a></li>
+            </Ul>
+        </nav>
+    </header>
+
+    <main>    
+        <div class="informacion_personal">
+            <div>
+                <div class="informacion">
+                    <div class="sobre-mi">
+                        <h2>Sobre mi</h2>
+                    </div>
+
+                    <div class="Parrafo1">
+                        <p>Mi nombre es Mario, nací en la ciudad de Medellin; actualmente laboro como supervisor en una gran empresa tecnológica de Colombia, me he enriquezido muchisimo de aprendizajes, 
+                        pero me encantaria enfocarme en lo que mas le saco gusto que es la programación; allí veo mi futuro.</p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <img src="img/luffy.jpg" width="200" height="200" alt="Luffy, One Piece">
+                </div>           
+            </div>
+        </div>
+
+            <div class="paisaje">
+                <img src="img/paisaje.jpg" width="100%" height="300" alt="Paisaje, Montañas">
+            </div>
+
+        <div class="trabajos_1">
+
+            <div>
+                <h2 class="fuente-oscura separacion"> Trabajos</h2> 
+            </div>
+            
+            <div class="listado_trabajos">              
+                <div>                       
+                    <img src="img/tres_hermanos.jpg" width="200" height="200" alt="Luffy, Sabo, Ace, One Piece">
+                                               
+                    <h3 class="fuente-oscura">Vinculo De Los Tres Hermanos</h3>
+                                                
+                    <p class="no_flotar">A medida que crecieron juntos, Ace, Luffy y su otro hermano
+                        adoptivo, Sabo, formaron un vínculo inquebrantable.
+                        Compartieron aventuras, sueños y promesas de alcanzar sus
+                        objetivos como piratas. </p>
+                                                
+                    <nav>
+                        <Ul>
+                            <li><a href="#">Leer más</a></li>
+                        </Ul>
+                    </nav>                  
+                </div>          
+            
+                <div>                       
+                    <img src="img/luffy2.jpg" width="200" height="200" alt="Luffy, One Piece"> 
+                                                
+                    <h3 class="fuente-oscura">Luffy</h3>
+                                                
+                    <p>Monkey D. Luffy es un personaje de ficción y el protagonista principal del manga One Piece 
+                    creado por Eiichirō Oda. Es apodado por los demás como "Sombrero de Paja", 
+                    debido a su característico sombrero que lleva desde niño. Su cuerpo está hecho de goma, 
+                    debido a haberse comido la Fruta Goma Goma.</p>
+                                           
+                    <nav>
+                        <Ul>
+                            <li><a href="#">Leer más</a></li>
+                        </Ul>
+                    </nav>                       
+                </div>
+                
+                <div>                       
+                    <img src="img/zoro.jpg" width="200" height="200" alt="Zoro, One Piece">
+                                               
+                    <h3 class="fuente-oscura">Zoro Roronoa</h3>
+                                                
+                    <p class="no_flotar">Roronoa Zoro, también conocido como "El Cazador de Piratas Roronoa Zoro", 
+                    es uno de los personajes principales del manga One Piece. Fue el primer miembro en unirse a Luffy 
+                    como tripulante, convirtiéndose en el combatiente​​ de la tripulación, y uno de sus dos espadachines, 
+                    siendo el otro Brook. </p>
+                                                
+                    <nav>
+                        <Ul>
+                            <li><a href="#">Leer más</a></li>
+                        </Ul>
+                    </nav>                  
+                </div> 
+
+                <div>                       
+                    <img src="img/ace.jpg" width="200" height="200" alt="Ace, Luffy, One Piece">
+                                               
+                    <h3 class="fuente-oscura">Luffy & Ace</h3>
+                                                
+                    <p class="no_flotar">Ace, llevando el nombre de su madre como homenaje a su
+                        sacrificio, fue rescatado y adoptado por Monkey D. Garp, el
+                        abuelo de Luffy, tal como le pidió Roger antes de su ejecución.
+                        A partir de entonces, Ace se convirtió en un miembro de la
+                        familia adoptiva de Luffy. </p>
+                                                
+                    <nav>
+                        <Ul>
+                            <li><a href="#">Leer más</a></li>
+                        </Ul>
+                    </nav>                  
+                </div> 
+            </div>           
+        </div>
+
+        <div class="form-header">
+
+                <h1>Contacto</h1>
+                <p><em>¡Esperamos tu consulta!</em></p>
+          
+                <form action="" method="get" class="formulario">
+                    <div class="form-row">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="pepe@gmail.com"
+                        />
+                    </div>
+
+                    <div class="form-row">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <button>Enviar</button>
+                    </div>
+                </form>           
+        </div>
+        
+    </main>
+
+
+
+
+
+    <footer>
+        <div id="div_footer">
+            <p class="fuente-acento">Creado por: Mario Alexander Arroyave Rincón</p>
+        </div>
+        <div>
+            <nav>
+                <Ul>
+                    <li><a href="https://wa.me/3006502946">WhatsApp</a></li>
+                    <li><a href="index.html">Instagram</a></li>
+                    <li><a href="index.html">Facebook</a></li>
+                    <li><a href="index.html">TikTok</a></li>
+                </Ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>

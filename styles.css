@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  body{font-family: Georgia, 'Times New Roman', Times, serif;}    
+  body{background-color: rgb(211, 207, 204);}
+
+
+/* HEADER */
+
+    header{
+        width: 100%;
+        background-color: rgba(40, 44, 43, 0.884);
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        margin: 0px 10px 0px 10px;
+        position:fixed;
+        z-index: 2;  
+    }
+
+    header h1 {
+        display: inline-block;
+        line-height: 80px;
+        padding: 0 50px;
+    }
+
+    header nav{
+        float: right;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin-right: 20px;
+    }
+
+
+/* ACTIVE */
+
+    .navbar.active {
+        height: 100vh;
+    }
+
+    .navbar.active ul.menu {
+        opacity: 1;
+    }
+
+    
+/* MAIN */
+
+    main{
+        width: 100%;
+        background-color: rgb(208, 223, 217);
+        padding: 20px;
+        margin: 0px 10px 0px 10px;
+        font-family: 'Courier New', Courier, monospace;
+        position:relative;
+        Top: 80px;
+        z-index: 1;
+    }
+
+    main div{
+        background-color: rgb(208, 223, 217);
+        padding: 20px;
+        margin: 0px;
+        border: 1px solid black;
+    }
+
+    main .informacion_personal div{
+        display: flex;
+        flex-direction: row;
+        justify-content: Center;
+        flex-wrap: wrap;
+    }
+
+    main .informacion_personal .informacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: Center;
+        float: none;
+        text-align: right;
+        width: 500px;
+    }
+
+    main .informacion_personal div div{       
+        justify-content: right;      
+    }   
+
+    main .trabajos_1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: Center;
+        float: none;
+    }
+
+    main .trabajos_1 div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main .trabajos_1 .listado_trabajos{
+        justify-content: Center;
+    }
+
+    main .trabajos_1 div div{   
+        display:inline-block;          
+        flex-direction: column;
+        float: none;
+        flex-wrap: wrap; 
+        text-align: center;
+        width: 300px;
+        }
+  
+    main .trabajos_1 div img{
+        border-radius: 30px;
+    }
+
+
+/* FORMULARIO */
+
+    /* ------------- Encabezado Contacto ------------- */
+
+    main .form-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: Center;
+        text-align: center;
+    }
+
+    .form-header h1 {
+        font-size: 30px;
+        margin-bottom: 20px;}
+
+    .form-header {
+        text-align: center;
+        background-color: #f6f7f8;
+        border: 1px solid #d6d9dc;
+        border-radius: 3px;
+        width: 60%;
+        margin: 10px auto;
+        padding: 50px;
+    }
+
+    /* ------------- Formulario ------------- */
+
+    .formulario {
+        background-color: #f6f7f8;
+        border: 1px solid #d6d9dc;
+        border-radius: 3px;
+        padding: 50px;
+        margin: 30px 0 40px 0;
+        
+    }
+
+    /* ------------- Campos del Formulario ------------- */
+
+    .form-row {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .form-row input[type="text"],
+    .form-row input[type="email"] {
+        background-color: #bdbdbd;
+        border: 0;
+        border-radius: 6px;
+        width: 100%;
+        padding: 7px;
+        font-size: 14px;
+    }
+    
+    .form-row label {
+        margin-bottom: 3px;
+        text-align: initial;
+    }
+
+    main .form-header #mensaje{
+        height: 100px;
+        width: auto;
+    }
+
+
+
+
+
+
+/* FOOTER */
+
+    footer{
+        width: 100%;
+        background-color: rgb(40, 44, 43);
+        padding: 10px;
+        margin: 0px 10px 0px 10px;
+        clear: both; 
+        display: inline-block;
+        text-align: center;
+        position:relative;
+        Top: 80px;
+        z-index: 3;
+    }
+
+    footer #div_footer p{
+        padding: 10px;
+    }
+
+    footer nav ul a {
+        padding: 10px;
+    }
+
+
+
+
+
+
+
+/* CLASES */
+
+    /* Menu */
+
+    #check{
+        display: none;
+    }
+
+    .checkbtn{
+        font-size: 25px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .fuente-clara {color: #eeeeee;}
+
+    .fuente-oscura {color: #86682b;}
+
+    .fuente-acento {color: #b59a61;}
+
+    header nav ul li a{
+        color: rgb(255, 255, 255);}
+
+    footer nav ul li a{
+        color: rgb(255, 255, 255);}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) 
+    {
+
+    /* Header */
+
+    header{
+        background-color: rgb(75, 99, 99);
+    }
+
+
+    /* Menu */
+
+    .checkbtn{
+        display: block;
+    }
+    
+
+    header ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header nav ul li a {
+    font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: #2c3e50;
+    }
+
+
+    /* Main */
+
+    main{
+        Top: 100px;
+    }
+    
+    main .informacion_personal{       
+        flex-wrap: wrap;
+        justify-content: Center;
+    }
+
+    main .informacion_personal .informacion{
+        text-align: center;
+    }
+
+    main .informacion_personal div div{       
+        justify-content: center; /* Centrar "Sobre Mi" */     
+    }
+
+
+    main .trabajos_1 div{
+        flex-wrap: wrap;
+    }
+    
+    }
